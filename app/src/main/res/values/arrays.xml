@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="UniversityName">
+        <item>@string/University0</item>
+        <item>@string/University1</item>
+        <item>@string/University2</item>
+        <item>@string/University3</item>
+        <item>@string/University4</item>
+        <item>@string/University5</item>
+    </string-array>
+</resources>

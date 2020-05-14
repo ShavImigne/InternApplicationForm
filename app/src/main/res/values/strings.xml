@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ShoocalTask2</string>
+    <string name="InternAppHeading">INTERN APPLICATION</string>
+    <string name="ApplicantName">Full Name</string>
+    <string name="FeedbackName">John Doe</string>
+    <string name="EmailAddress">Email Address</string>
+    <string name="FeedbackEmail">johndoe@gmail.com</string>
+    <string name="UniversitySelect">Select University</string>
+    <string name="University0">Select</string>
+    <string name="University1">Delhi Technological University</string>
+    <string name="University2">N.S.U.T</string>
+    <string name="University3">I.I.T Delhi</string>
+    <string name="University4">I.I.I.T Delhi</string>
+    <string name="University5">I.P.U</string>
+    <string name="UniversityPrompt">Select University</string>
+    <string name="LanguageList">LANGUAGES</string>
+    <string name="AddLanguageButton">Add Language +</string>
+    <string name="LanguageName">Enter Language</string>
+    <string name="FeedbackLanguageHint">C,C++,Python..</string>
+    <string name="LanguageExperience">Experience</string>
+    <string name="FeedbackExpHint">(In months)</string>
+    <string name="LangProf1">Beginner</string>
+    <string name="LangProf2">Intermediate</string>
+    <string name="LangProf3">Advanced</string>
+    <string name="RemoveLanguage">Remove Language</string>
+</resources>
