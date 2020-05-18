@@ -10,9 +10,10 @@
         android:id="@+id/LLSub5"
         android:layout_width="410dp"
         android:layout_height="175dp"
-        android:layout_marginBottom="556dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/LLSub5.1"

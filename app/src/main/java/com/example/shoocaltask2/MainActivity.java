@@ -3,9 +3,7 @@ package com.example.shoocaltask2;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -18,14 +16,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final ScrollView scrollayout = (ScrollView) findViewById(R.id.ScrollView1);
+        final LinearLayout Linlayout = (LinearLayout) findViewById(R.id.Linearlayout1);
         Button AddLanguage = findViewById(R.id.NewLanguageButton);
         AddLanguage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 LayoutInflater layoutInflater = getLayoutInflater();
-                final ConstraintLayout view = (ConstraintLayout) layoutInflater.inflate(R.layout.inflate,scrollayout,false);
-                scrollayout.addView(view);
+                final ConstraintLayout view = (ConstraintLayout) layoutInflater.inflate(R.layout.inflate2,Linlayout,false);
+                Linlayout.addView(view);
             }
         });
     }
