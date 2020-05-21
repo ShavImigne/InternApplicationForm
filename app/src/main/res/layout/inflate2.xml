@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/LLSub5"
+        android:layout_width="411dp"
+        android:layout_height="181dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/LanguageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LanguageName"
+            android:textAlignment="center"
+            android:textSize="8pt"
+            app:layout_constraintBottom_toBottomOf="@+id/EnterLanguage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/EnterLanguage" />
+
+        <EditText
+            android:id="@+id/EnterLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="no"
+            android:ems="10"
+            android:hint="@string/FeedbackLanguageHint"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/EnterExperience"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/LangExp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LanguageExperience"
+            android:textAlignment="center"
+            android:textSize="8pt"
+            app:layout_constraintBottom_toBottomOf="@+id/EnterExperience"
+            app:layout_constraintStart_toStartOf="@+id/LanguageName"
+            app:layout_constraintTop_toBottomOf="@+id/EnterLanguage" />
+
+        <EditText
+            android:id="@+id/EnterExperience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="no"
+            android:ems="10"
+            android:hint="@string/FeedbackExpHint"
+            android:inputType="number"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/space5"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Space
+            android:id="@+id/space5"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            app:layout_constraintBottom_toTopOf="@+id/LanguageProf"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/LanguageProf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/RemoveLang"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:text="@string/LangProf1" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="147dp"
+                android:layout_height="match_parent"
+                android:text="@string/LangProf2" />
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="138dp"
+                android:layout_height="match_parent"
+                android:text="@string/LangProf3" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/RemoveLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/RemoveLanguage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_constraintTop_toBottomOf="@id/LLsub5.3"
+            android:onClick="OnRemove"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
