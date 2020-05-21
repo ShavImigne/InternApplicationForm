@@ -8,23 +8,33 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.ScrollView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
+    private int count = 0;
+    private LinearLayout Linlayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final LinearLayout Linlayout = (LinearLayout) findViewById(R.id.Linearlayout1);
-        Button AddLanguage = findViewById(R.id.NewLanguageButton);
-        AddLanguage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                LayoutInflater layoutInflater = getLayoutInflater();
-                final ConstraintLayout view = (ConstraintLayout) layoutInflater.inflate(R.layout.inflate2,Linlayout,false);
-                Linlayout.addView(view);
-            }
-        });
+        Linlayout = (LinearLayout) findViewById(R.id.Linearlayout1);
+        LayoutInflater layoutInflater = getLayoutInflater();
+        final ConstraintLayout view = (ConstraintLayout) layoutInflater.inflate(R.layout.inflate2,Linlayout,false);
+        Linlayout.addView(view);
+    }
+    public void Onclick(View v){
+        count++;
+        LayoutInflater layoutInflater = getLayoutInflater();
+        final ConstraintLayout view = (ConstraintLayout) layoutInflater.inflate(R.layout.inflate2,Linlayout,false);
+        Linlayout.addView(view);
+    }
+    public void OnRemove(View v){
+        if(count==0){
+            Toast.makeText(getApplicationContext(), "You need to know atleast one language!", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            Linlayout.removeView((View) v.getParent().getParent());
+            count--;
+        }
     }
 }

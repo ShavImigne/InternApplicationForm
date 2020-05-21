@@ -22,7 +22,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/LinearLayoutMain"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="317dp">
 
                 <TextView
                     android:id="@+id/InternApplication"
@@ -126,7 +126,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/LanguageList"
                     android:textAlignment="center"
-                    android:textSize="10pt"
+                    android:textSize="12pt"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.501"
                     app:layout_constraintStart_toStartOf="parent"
@@ -136,125 +136,12 @@
                     android:id="@+id/NewLanguageButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="Onclick"
                     android:text="@string/AddLanguageButton"
                     android:textAlignment="center"
-                    app:layout_constraintBottom_toTopOf="@+id/space4"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <Space
-                    android:id="@+id/space4"
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    app:layout_constraintBottom_toTopOf="@+id/LLSub5"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/LLSub5"
-                    android:layout_width="411dp"
-                    android:layout_height="211dp"
-                    android:layout_marginTop="313dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <TextView
-                        android:id="@+id/LanguageName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/LanguageName"
-                        android:textAlignment="center"
-                        android:textSize="8pt"
-                        app:layout_constraintBottom_toBottomOf="@+id/EnterLanguage"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/EnterLanguage" />
-
-                    <EditText
-                        android:id="@+id/EnterLanguage"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:autofillHints="no"
-                        android:ems="10"
-                        android:hint="@string/FeedbackLanguageHint"
-                        android:inputType="textPersonName"
-                        android:textAlignment="center"
-                        app:layout_constraintBottom_toTopOf="@+id/EnterExperience"
-                        app:layout_constraintEnd_toEndOf="parent" />
-
-                    <TextView
-                        android:id="@+id/LangExp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/LanguageExperience"
-                        android:textAlignment="center"
-                        android:textSize="8pt"
-                        app:layout_constraintBottom_toBottomOf="@+id/EnterExperience"
-                        app:layout_constraintStart_toStartOf="@+id/LanguageName"
-                        app:layout_constraintTop_toBottomOf="@+id/EnterLanguage" />
-
-                    <EditText
-                        android:id="@+id/EnterExperience"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:autofillHints="no"
-                        android:ems="10"
-                        android:hint="@string/FeedbackExpHint"
-                        android:inputType="number"
-                        android:textAlignment="center"
-                        app:layout_constraintBottom_toTopOf="@+id/space5"
-                        app:layout_constraintEnd_toEndOf="parent" />
-
-                    <Space
-                        android:id="@+id/space5"
-                        android:layout_width="match_parent"
-                        android:layout_height="21dp"
-                        app:layout_constraintBottom_toTopOf="@+id/Proficiency2"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
-
-                    <CheckBox
-                        android:id="@+id/Proficiency1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/LangProf1"
-                        app:layout_constraintBottom_toBottomOf="@+id/Proficiency2"
-                        app:layout_constraintStart_toStartOf="parent" />
-
-                    <CheckBox
-                        android:id="@+id/Proficiency2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/LangProf2"
-                        app:layout_constraintEnd_toStartOf="@+id/Proficiency3"
-                        app:layout_constraintHorizontal_bias="0.439"
-                        app:layout_constraintStart_toEndOf="@+id/Proficiency1"
-                        app:layout_constraintTop_toTopOf="@+id/Proficiency3" />
-
-                    <CheckBox
-                        android:id="@+id/Proficiency3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="65dp"
-                        android:text="@string/LangProf3"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent" />
-
-                    <Button
-                        android:id="@+id/LLSub5.4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/RemoveLanguage"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/Proficiency2"
-                        app:layout_constraintVertical_bias="1.0"
-                        tools:layout_constraintTop_toBottomOf="@id/LLsub5.3" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                    app:layout_constraintStart_toStartOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
