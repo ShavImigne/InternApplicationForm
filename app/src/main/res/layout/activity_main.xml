@@ -10,7 +10,8 @@
     <ScrollView
         android:id="@+id/ScrollView1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/bg1">
 
         <LinearLayout
             android:id="@+id/Linearlayout1"
@@ -28,8 +29,11 @@
                     android:id="@+id/InternApplication"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:shadowColor="@android:color/holo_red_light"
                     android:text="@string/InternAppHeading"
+                    android:textColor="@android:color/holo_red_dark"
                     android:textSize="15pt"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -50,6 +54,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/ApplicantName"
                     android:textAlignment="center"
+                    android:textColor="@android:color/black"
                     android:textSize="10pt"
                     app:layout_constraintEnd_toEndOf="@+id/EmailAddress"
                     app:layout_constraintStart_toStartOf="parent"
@@ -73,6 +78,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/EmailAddress"
                     android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="10pt"
                     app:layout_constraintEnd_toEndOf="@+id/UniversitySelect"
                     app:layout_constraintStart_toStartOf="parent"
@@ -97,6 +103,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/UniversitySelect"
                     android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="9pt"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/UniversityDropdown" />
@@ -126,7 +133,9 @@
                     android:layout_height="wrap_content"
                     android:text="@string/LanguageList"
                     android:textAlignment="center"
+                    android:textColor="@android:color/black"
                     android:textSize="12pt"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.501"
                     app:layout_constraintStart_toStartOf="parent"
@@ -136,15 +145,20 @@
                     android:id="@+id/NewLanguageButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="#008000"
                     android:onClick="Onclick"
                     android:text="@string/AddLanguageButton"
                     android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
         </LinearLayout>
     </ScrollView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

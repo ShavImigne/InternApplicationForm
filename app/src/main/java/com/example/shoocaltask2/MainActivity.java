@@ -19,14 +19,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Linlayout = (LinearLayout) findViewById(R.id.Linearlayout1);
         LayoutInflater layoutInflater = getLayoutInflater();
-        final ConstraintLayout view = (ConstraintLayout) layoutInflater.inflate(R.layout.inflate2,Linlayout,false);
+        final ConstraintLayout view = (ConstraintLayout) layoutInflater.inflate(R.layout.inflate2, Linlayout, false);
         Linlayout.addView(view);
+        final ConstraintLayout Submit = (ConstraintLayout) layoutInflater.inflate(R.layout.submit,Linlayout,false);
+        Linlayout.addView(Submit);
     }
     public void Onclick(View v){
         count++;
+        View x = findViewById(R.id.SubmitForm);
+        Linlayout.removeView((View) x.getParent());
         LayoutInflater layoutInflater = getLayoutInflater();
         final ConstraintLayout view = (ConstraintLayout) layoutInflater.inflate(R.layout.inflate2,Linlayout,false);
         Linlayout.addView(view);
+        final ConstraintLayout Submit = (ConstraintLayout) layoutInflater.inflate(R.layout.submit,Linlayout,false);
+        Linlayout.addView(Submit);
     }
     public void OnRemove(View v){
         if(count==0){

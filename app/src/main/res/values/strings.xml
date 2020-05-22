@@ -13,14 +13,15 @@
     <string name="University4">I.I.I.T Delhi</string>
     <string name="University5">I.P.U</string>
     <string name="UniversityPrompt">Select University</string>
-    <string name="LanguageList">LANGUAGES</string>
-    <string name="AddLanguageButton">Add Language +</string>
+    <string name="LanguageList"><u>LANGUAGES</u></string>
+    <string name="AddLanguageButton"><b>Add +</b></string>
     <string name="LanguageName">Enter Language</string>
     <string name="FeedbackLanguageHint">C,C++,Python..</string>
     <string name="LanguageExperience">Experience</string>
     <string name="FeedbackExpHint">(In months)</string>
-    <string name="LangProf1">Beginner</string>
-    <string name="LangProf2">Intermediate</string>
-    <string name="LangProf3">Advanced</string>
-    <string name="RemoveLanguage">Remove Language</string>
+    <string name="LangProf1"><b>Beginner</b></string>
+    <string name="LangProf2"><b>Intermediate</b></string>
+    <string name="LangProf3"><b>Advanced</b></string>
+    <string name="RemoveLanguage"><b>Remove -</b></string>
+    <string name="SubmitForm"><b>Submit</b></string>
 </resources>
